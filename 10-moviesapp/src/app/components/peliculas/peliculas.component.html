@@ -1,0 +1,11 @@
+<div class="jumbotron">
+  <h1 class="display-4">Peliculas App</h1>
+  <p class="lead">Esta es una aplicación de peliculas</p>
+  <hr class="my-4">
+  <h3><small> Peliculas en Cines </small></h3>
+<app-cover *ngIf="!cargando &&  peliculasEnCines[0]"   [peliculas]="peliculasEnCines"></app-cover>
+  <h3><small> Peliculas Populares </small></h3>
+<app-cover *ngIf="!cargando &&  peliculasPopulares[0]" [peliculas]="peliculasPopulares"></app-cover>
+   <h3><small> Peliculas Populares Niños</small></h3>
+<app-cover *ngIf="!cargando &&  peliculasKids[0]"      [peliculas]="peliculasKids"></app-cover>
+</div>

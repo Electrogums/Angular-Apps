@@ -1,0 +1,13 @@
+<div class="main-container">
+  <div class="row">
+<div class="col-md-10">
+<input type="text" placeholder="buscar"  name="texto"  class="form-control" (keyup)="buscar(texto.value)"
+[(ngModel)]="texto">
+</div>
+<div class="col-md-2">
+   <button type="button" name="button" (click)="buscar(texto.value)" class="btn btn-outline-success form-control">Buscar</button>
+</div>
+</div>
+<h3 *ngIf="!cargando &&  peliculas[0]"  ><small> Peliculas en Cines </small></h3>
+<app-cover *ngIf="!cargando &&  peliculas[0]" [texto]="texto"  [peliculas]="peliculas"></app-cover>
+</div>

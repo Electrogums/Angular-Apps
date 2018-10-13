@@ -1,0 +1,35 @@
+<div class="main-container" *ngIf="!loading  && pelicula">
+<div class="row">
+  <div class="col-md-12">
+          <h2><span class="badge badge-light">{{pelicula.original_title}}</span></h2>
+  </div>
+</div>
+
+<div class="row" >
+<div class="col-md-6 div-pic-detalle"  [ngStyle]="{'background-image': pelicula.poster_path }">
+
+</div>
+<div class="col-md-1">
+
+</div>
+<div class="col-md-5">
+<div class="row">
+  <div class="col-md-12">
+      <h2><span class="badge badge-light">Sinopsis</span></h2>
+      <p style="text-align:justify">{{pelicula.overview}}</p>
+        <span class="badge badge-primary ">Voto Promedio: {{pelicula.vote_average}}</span>
+        <span class="badge badge-primary spa">Votos totales {{pelicula.vote_count}}</span>
+        <span class="badge badge-primary spa">Duración {{pelicula.runtime}} minutos </span>
+
+</div>
+<div class="row">
+  <div class="col-md-12">
+     <button class="btn btn-outline-danger" (click)="regresa()" style="margin-top:15px; margin-left:15px;" type="button"  name="button">Regresar</button>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>

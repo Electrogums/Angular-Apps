@@ -1,0 +1,28 @@
+
+<div class="row">
+<div class="col-md-6">
+<div class="row">
+      <div (click)="verPelicula(peliculas[1])"  class="col-md-12 div-pic-1 puntero"  [ngStyle]="{'background-image': peliculas[1].poster_path  }">
+      <span class="badge badge-pill badge-dark pic-titulo" > {{peliculas[1].title}}</span> </div>
+</div>
+<div class="row">
+   <div  (click)="verPelicula(peliculas[2])"  class="col-sm-6 div-pic-2 puntero"  [ngStyle]="{'background-image': peliculas[2].poster_path }">
+   <span class="badge badge-dark pic-titulo" > {{peliculas[2].title}}</span> </div>
+   <div (click)="verPelicula(peliculas[3])"  class="col-sm-6 div-pic-2 puntero" [ngStyle]="{'background-image': peliculas[3].poster_path }">
+  <span class="badge badge-dark pic-titulo"> {{peliculas[3].title}}</span> </div>
+ </div>
+ </div>
+
+ <div class="col-md-6">
+   <div class="row">
+      <div (click)="verPelicula(peliculas[4])"  class="col-sm-6 div-pic-2 puntero" [ngStyle]="{'background-image': peliculas[4].poster_path }">
+      <span class="badge badge-dark pic-titulo"> {{peliculas[4].title}}</span>  </div>
+      <div (click)="verPelicula(peliculas[5])"  class="col-sm-6 div-pic-2 puntero" [ngStyle]="{'background-image': peliculas[5].poster_path }">
+      <span class="badge badge-dark pic-titulo"> {{peliculas[5].title}}</span></div>
+    </div>
+ <div class="row">
+       <div (click)="verPelicula(peliculas[6])"  class="col-md-12 div-pic-1 puntero" [ngStyle]="{'background-image': peliculas[6].poster_path }">
+       <span class="badge badge-dark pic-titulo"> {{peliculas[6].title}}</span></div>
+ </div>
+  </div>
+ </div>
